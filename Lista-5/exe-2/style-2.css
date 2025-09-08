@@ -1,3 +1,14 @@
 a{
     text-decoration: none;
+    font: 3em sans-serif;
+}
+a:link{
+    color: chartreuse;
+}
+a:visited{
+    color: crimson;
+}
+    
+a:hover{
+    color: aquamarine;
 }
