@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.caixa{
+    border: solid 2px black;
+    margin: 20%;
+    padding: 20%;
+}

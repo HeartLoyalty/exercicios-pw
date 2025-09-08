@@ -1,0 +1,19 @@
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 20px;
+
+}
+div{
+    
+    border: solid 2px black;
+    max-width: 50%;
+}
+.coluna{
+    float: right;
+    max-width: 50%;
+
+}
