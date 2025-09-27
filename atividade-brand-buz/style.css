@@ -1,0 +1,62 @@
+:root{
+    --primary-color: #e85f19;
+    --secundary-color: #ee8a56;
+    --dark-color: #262627;
+    --info-color: #5d5d5d;
+    --ligth-color: #f8f9fc;
+}
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: url(./assets/bg.png);
+    display: flex;
+    flex-direction: column;
+    
+}
+.container{
+    align-items: center;
+}
+header{
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    font-size: 2rem;
+    justify-content: center;
+    
+}
+ul{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+
+}
+a{
+    text-decoration: none;
+}
+section{
+    display: flex;
+    height: 600px;
+    background-color: gray  ;
+}
+.colunm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+button{
+    margin-top: 20%;
+    align-self: center;
+    padding: 12px;
+    border-radius: 12px;
+}
+a{
+    text-align: center;
+    
+}
+
+
+
