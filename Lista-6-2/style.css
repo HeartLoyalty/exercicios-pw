@@ -1,0 +1,98 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header{
+    border: 2px solid blue;
+    text-align: center;
+    margin: 1rem;
+
+}
+header nav {
+    display: inline-block;
+    margin: 1.5rem;
+}
+nav a{
+    margin: 3.5rem;
+    text-decoration: none;
+    border: 2px solid blue;
+    border-radius: 20%;
+    padding: 10px;
+
+}
+
+img{
+    width: 250px;
+
+}
+.img1{
+    float: left;
+    border: 2px solid black;
+   width: 30%;
+   padding: 3.5%;
+    text-align: center;
+    margin-right: 10px;
+}
+.img2{
+     float: left;
+    border: 2px solid black;
+   width: 30%;
+   text-align: center;
+   padding: 3%;
+}
+.img3{
+     float: left;
+    border: 2px solid black;
+   width: 30%;
+   padding: 3%;
+   text-align: center;
+}
+.img4{
+    float: left;
+    border: 2px solid black;
+   width: 30%;
+   padding: 2.5%;
+    text-align: center;
+}
+.img5{
+     float: left;
+    border: 2px solid black;
+   width: 30%;
+   text-align: center;
+   padding: 2.5%;
+}
+.img6{
+     float: left;
+    border: 2px solid black;
+   width: 30%;
+   padding: 3%;
+   text-align: center;
+}
+.img8{
+    float: left;
+    border: 2px solid black;
+    width: 30%;
+    text-align: center;
+    padding: 2.5%;
+    padding-left: 2%;
+}
+.img9{
+    float: left;
+    border: 2px solid black;
+    width: 30%;
+    padding: 2.5%;
+    text-align: center;
+}
+
+.img7{
+    float: left;
+    border: 2px solid black;
+   width: 30%;
+   padding: 3%;
+    text-align: center;
+    margin-right: px;
+}
+div{
+    display: inline-block;
+}
