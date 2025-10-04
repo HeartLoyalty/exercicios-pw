@@ -2,37 +2,73 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    background: linear-gradient(80deg, rgb(117, 192, 221), white, rgb(115, 238, 222)
+    );
+    height: 100%;
+    width: 100%;
 }
 header{
-    border: 2px solid blue;
+    background: linear-gradient(120deg, blue, rgb(41, 164, 185), rgb(36, 36, 107));
     text-align: center;
-    margin: 1rem;
-
+    margin-bottom: 1rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 99vw;
+    position: fixed;
+    z-index: 1;
 }
 header nav {
     display: inline-block;
     margin: 1.5rem;
+    
 }
 nav a{
+    color: black;
+    font-weight: bolder;
     margin: 3.5rem;
     text-decoration: none;
-    border: 2px solid blue;
-    border-radius: 20%;
+    border-radius: 20px;
     padding: 10px;
+    background: linear-gradient(170deg, rgb(117, 192, 221), white, rgb(115, 238, 222)
+    );
+    transition: transform 0.5s, box-shadow 0.4s;
 
 }
+nav a:hover{
+    box-shadow: 0 0 10px 4px black;
+    transform: translate(0, -8px) scale(1.05);
+}
 
+.item{
+    transition: transform 0.5s, box-shadow 0.4s;
+   
+}
+.item:hover{
+    box-shadow: 0 0 10px 4px black;
+    transform: translate(0, -8px) scale(1.05);
+
+}
 img{
     width: 250px;
+    border-radius: 20px;
 
 }
+
 .img1{
     float: left;
     border: 2px solid black;
    width: 30%;
-   padding: 3.5%;
+   padding: 3.672%;
     text-align: center;
-    margin-right: 10px;
+    margin-right: 20px;
+    background: linear-gradient(95deg, blue, rgb(41, 164, 185), rgb(36, 36, 107));
 }
 .img2{
      float: left;
@@ -40,6 +76,8 @@ img{
    width: 30%;
    text-align: center;
    padding: 3%;
+   margin-right: 20px;
+   background: linear-gradient(95deg, blue, rgb(41, 164, 185), rgb(36, 36, 107));
 }
 .img3{
      float: left;
@@ -47,13 +85,16 @@ img{
    width: 30%;
    padding: 3%;
    text-align: center;
+   background: linear-gradient(95deg, blue, rgb(41, 164, 185), rgb(36, 36, 107));
 }
 .img4{
     float: left;
     border: 2px solid black;
    width: 30%;
-   padding: 2.5%;
+   padding: 2.7%;
     text-align: center;
+    margin-right: 20px;
+    background: linear-gradient(95deg, blue, rgb(41, 164, 185), rgb(36, 36, 107));
 }
 .img5{
      float: left;
@@ -61,38 +102,91 @@ img{
    width: 30%;
    text-align: center;
    padding: 2.5%;
+   margin-right: 20px;
+   background: linear-gradient(95deg, blue, rgb(41, 164, 185), rgb(36, 36, 107));
 }
 .img6{
      float: left;
     border: 2px solid black;
    width: 30%;
-   padding: 3%;
+   padding: 2.97%;
    text-align: center;
+   background: linear-gradient(95deg, blue, rgb(41, 164, 185), rgb(36, 36, 107));
 }
-.img8{
-    float: left;
-    border: 2px solid black;
-    width: 30%;
-    text-align: center;
-    padding: 2.5%;
-    padding-left: 2%;
-}
-.img9{
-    float: left;
-    border: 2px solid black;
-    width: 30%;
-    padding: 2.5%;
-    text-align: center;
-}
-
 .img7{
     float: left;
     border: 2px solid black;
    width: 30%;
    padding: 3%;
     text-align: center;
-    margin-right: px;
+    margin-right: 20px;
+    background: linear-gradient(95deg, blue, rgb(41, 164, 185), rgb(36, 36, 107));
 }
+.img8{
+    float: left;
+    border: 2px solid black;
+    width: 30%;
+    text-align: center;
+    padding: 1.8%;
+    margin-right: 20px;
+    background: linear-gradient(95deg, blue, rgb(41, 164, 185), rgb(36, 36, 107));
+}
+.img9{
+    float: left;
+    border: 2px solid black;
+    width: 30%;
+    padding: 1.989%;
+    text-align: center;
+    background: linear-gradient(95deg, blue, rgb(41, 164, 185), rgb(36, 36, 107));
+}
+
 div{
     display: inline-block;
+    border-radius: 30px;
+    color: aliceblue;
+    margin-bottom: 5%;
+}
+
+main{
+    float: left;
+    width: 90%;
+    display: block;
+    padding-left: 50px;
+     margin-top: 12%;
+}
+aside{
+    float: right;
+    width: 10%;
+    display: block;
+    height: 255vh;
+    background: linear-gradient(0deg, rgb(117, 192, 221), rgb(115, 238, 222)
+    );
+    color:black;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 12%;
+    
+}
+aside ul li{
+    margin-bottom: 25rem;
+    list-style-type:none;
+    font-weight: bolder;
+}
+footer{
+    float: inline-start;
+    padding: 4%;
+    font-weight: bolder;
+
+    
+
+}
+.futers{
+    color: blue;
+    transition: all 1s;
+    font-size: 20px;
+}
+.futers:hover{
+    box-shadow: 0 0 10px 4px blue;
+    color: black;
+
 }
