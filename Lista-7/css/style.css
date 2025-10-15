@@ -1,0 +1,76 @@
+@import url("./resets.css");
+body{
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-inline: 50px;
+    margin-top: 30px;
+    padding-bottom: 100px;
+    border-style:hidden;
+    box-shadow: 0 0 2px 4px rgba(230, 225, 225, 0.582);  
+}
+header{
+    margin: 100px;
+    background-color: gray;
+    padding: 45px;
+    margin-inline: 0;
+    margin-top: 0;
+}
+.container{
+    
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+img{
+    width: 200px;
+    align-self: center;
+}
+a{
+    text-align: center;
+    
+}
+#iphone{
+padding-top: 51.3px;
+}
+#redmi{
+    padding-top: 29.3px;
+}
+#motog05{
+    padding-top: 17px;
+}
+.card{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    align-self: center;
+    border: solid black 2px;
+    text-align: center;
+    padding-bottom: 50px;
+    gap: 10px;
+    border-radius: 3%;
+    box-shadow: 0 0 4px 2px gray;
+    border-style:inherit;
+
+    margin-top: auto;
+    }
+    button{
+        padding: 10px;
+        width: 150px;
+        align-self: center;
+        margin-top: 20px;
+        background-color: #1b97fd;
+        color: white;
+        border-color: #1b97fd;
+        border-radius: 5%;
+    }
+    button:hover{
+        background: rgb(79, 79, 231);
+         transform: translate(0, 0px) scale(1.10);
+         box-shadow: #1b97fd 0 0 8px 4px;
+         border-color: #1b97fd;
+         
+    }
