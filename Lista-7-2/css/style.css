@@ -1,0 +1,77 @@
+@import url(./resets.css);
+@import url(./variables.css);
+img{
+    width: 250px;
+    border-radius: 5%;
+    border: double 5px var(--cor-secundaria);
+
+    
+}
+#BP{
+    width: 200px;
+}
+header{
+   text-wrap: wrap;
+    padding: 50px;
+    text-align: center;
+    background: rgb(155, 11, 11);
+    font-size: 2rem;
+    border: double var(--cor-secundaria) 5px;
+}
+body{
+    padding: 5%;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-texto);
+    transition: 1.5s;
+    transform: scale(1.01);
+}
+.container{
+    border: double var(--cor-secundaria) 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background: var(--cor-principal);
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+}
+.card{
+    
+    border-radius: 5%;
+    background: rgb(155, 11, 11);
+    display: flex;
+    flex-direction: column;
+    
+    gap: 15px;
+    border: solid 5px var(--cor-secundaria);
+    border-style: double;
+    padding: 15px;
+    text-align: center;
+    font-weight: bolder;
+    max-width: 300px;
+    align-self: center;
+   
+    
+}
+.card:hover{
+   transform: translate(0, -8px) scale(1.05);
+   transition: 1s;
+
+   box-shadow: 0 0 10px 4px var(--cor-secundaria);
+}
+button{
+    padding: 5px;
+    padding-inline: 25px;
+    align-self: center;
+    border-radius: 10%;
+    color: var(--cor-texto);
+    background: var(--cor-principal);
+    font-weight: bolder;
+}
+button:hover{
+    background: rgb(233, 77, 77);
+    transition: 0.5s;
+    cursor: pointer;
+}
