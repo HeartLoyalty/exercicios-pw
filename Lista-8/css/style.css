@@ -1,0 +1,81 @@
+@import url(./resets.css);
+body{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+header{
+    flex: 0 100vh 0;
+}
+h2{
+    font-size: 1rem;
+    text-wrap: wrap;
+}
+img{
+    width: 150px;
+}
+#img1{
+    width: 400px;
+    height: 300px;
+}
+#img5{
+    width: 590px;
+    height: 350px;
+    
+}
+#img6{
+    width: 490px;
+    height: 290px;
+    order: 2;
+}
+#img2{
+    height: 290px;
+    width: 490px;
+}
+#img3{
+    width: 490px;
+    height: 290px;
+}
+#img4{
+    width: 900px;
+    height: 450px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    border: solid;
+}
+.sidebar{
+flex: 0 0 200px;
+border: 2px solid black;
+
+}
+.principal-content{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 900px;
+    padding: 20px;
+}
+.card{
+    border: 2px double blue;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-self: center;
+
+}
+#first{
+    flex-grow: 2;
+    flex-basis: 300px;
+    order: -1;
+    
+}
