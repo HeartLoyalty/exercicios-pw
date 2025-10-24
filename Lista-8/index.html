@@ -4,41 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1>Guia de como usar o Terminal Bash de forma mais basica</h1>
+        <h1>Guia de como usar o Terminal Bash da forma mais basica</h1>
     </header>
     <div class="container">
     <div class="sidebar">
         <ul>
-            <li>Gêneros de Desenhos Animados Mais Consumidos</li>
-            <li>Plataformas Preferidas para Consumir Desenhos Animados</li>
-            <li>Frequencia de Consumo de Desenhos Animados por Gênero</li>
-            <li>Consumo de Desenhos animados por Faixa Etária</li>
-            <li>Tendência de Consumo de Desenhos Animados ao Longo do Tempo (Anual)</li>
+            <h3>Clone</h3>
+            <li>Pegar o Url do seu repositório para baixar ele dentro da sua maquina.</li>
+            <h3>Usando bash pela primeira vez na sua maquina</h3>
+            <li><strong>git config</strong> Os comandos git config são usados para configurar a identidade de quem está fazendo o commit. Todo commit é assinado com um nome e um e-mail.
+                Você precisa configurar sua identidade globalmente.
+                Use <strong>(--global)</strong> para que esta identidade seja usada em todos os seus repositórios naquela máquina.
+                Define o nome que aparecerá nos seus commits
+<strong>(git config --global user.name "Seu Nome Completo")</strong>
+efine o e-mail que aparecerá nos seus commits (deve ser o e-mail da sua conta GitHub)
+<strong>(git config --global user.email "seu.email@exemplo.com")</strong></li>
+                <h3>Altere o Nome do Branch Principal (Opcional, mas Recomendado)</h3>
+            <li>Se a sua branch principal local ainda for chamada master, é uma boa prática renomeá-la para main (o nome padrão moderno usado pelo GitHub).
+                Renomeia a branch local atual para 'main'
+<strong>git branch -M main</strong>
+            </li>
+            <h3>Notas</h3>
+            <li>As informações contidas aqui é um método que eu aprendi e que na minha visão é a forma mais simples de se subir arquivos no github usando o bash.
+                Existem muitas outras formas de se fazer umas sem usar o terminal, outras usando completamente o terminal desde a criação dos diretorios até, criação de pastas, de arquivos até vc subir para o GitHub.
+                Me esforcei ao maximo para deixar esse guia de um jeito simples de entender, eu mesmo ainda sei muito pouco sobre tudo o que o Git pode fazer, mas esse pouco que sei estou compartilhando para que cada vez mais pessoas possam estar conhecendo e aprendendo. para que nos tornemos desenvolvedores mais completos num futuro proximo. 
+            </li>
 
         </ul>
     </div>
     <main class="principal-content">
         <div class="card">
-            <h2>Gêneros de Desenhos Animados Mais Consumidos</h2>
+            <h2>Criando um Clone do Seu Repositório</h2>
+            <ol>
+                <li>Após pegar o link, entre no Seu VSCODE, e sem entrar em nenhuma pasta ou arquivo, na tela inicial. use o comando <strong>Crtl+J</strong>para abrir o terminal da plataforma.</li> 
+                <li>Com o terminal aberto procure pelos icones (+) com uma seta para baixo e nele selecione o terminal bash</li>
+                <li>No bash escreva o comando <strong>Git Clone + Url do repositório</strong> que vc copiou anteriormente</li>
+               
+            </ol>
             
            
         </div>
         
         <div class="card">
-            <h2>Plataformas Preferidas para Consumir Desenhos Animados</h2>
+            <h2>Alocando Seu Repositório Clonado no Diretorio Desejado </h2>
+            <ol>
+                 <li>A partir deste ponto o Repositório que você Criou no Git Hub está baixado na sua Maquina</li>
+                <li>Tenha em mente que todo o terminal vai abrir a pasta local do seu Usuario na maquina que vc estiver usando. caso queira salvar o Clone em um PenDrive ou em uma pasta fora do seu Usuario você deve navegar até ela escrevendo o comando <strong>(cd)</strong> no terminal e o local onde vc quer clonar o arquivo.</li>
+            </ol>
+                <p><strong>(cd ..)</strong> para voltar um Diretório do que está no momento</p>
+                <p><strong>(cd/caminho/para/o/diretorio/)</strong></p>
+                Exemple: <strong>(cd C:/Users/seu_usuario/Downloads)</strong>
            
         </div>
         <div class="card">
-            <h2>Frequência de Consumo de Desenhos Animados por Gênero</h2>
+            <h2>Comandos para atualizar seus Projetos pelo terminal</h2>
+           <p>Nesse ponto você já seguiu todos os passos para criar seus projetos e agora vc quer adicionar eles no seu repositório lá no Seu GitHub</p>
+           <ol>
+            <li>
+                Escreva no Terminal: <strong>Git Init</strong> quando esse comando for acionado ele ele cria uma subpasta oculta chamada .git no diretório atual.
+                Após o git init, o Git está pronto para rastrear arquivos, mas nenhum arquivo é rastreado automaticamente
+            </li>
+            <li>
+                Após Escreva no Terminal: <strong>Git pull</strong> este comando Sincroniza seu repositório local com as últimas alterações do repositório remoto (como o GitHub).
+                Antes de começar a trabalhar e, especialmente, antes de enviar suas próprias alterações, para garantir que você esteja trabalhando com a versão mais recente do projeto.
+            </li>
+            <p>Feito isso, você já pode fazer todas as modificações necessarias no seu projeto. 
+                adicionar arquivos, pastas e etc
+                <li>Agora Vamos adicionar as modificações que voce fez usanod <strong>git add .</strong> com esse comando todas as alteraçõesque vc fez serão adicionadas para serem commitadas</li>
+        </ol>
+        </p>
+    
             
         </div>
         <div class="card" id="litle">
-           <h2>Consumo de Desenhos Animados por Faixa Etária</h2>
-          
+           <h2>Subindo arquivos pro GitHub</h2>
+          <ol>
+            <li>Arquivos adicionados hora de usar o Comando <strong>git commit -m'descriçao do commit'</strong> usando isso Cria uma "fotografia" (um commit) das mudanças que estão na Staging Area e as armazena permanentemente no histórico do seu repositório local. É obrigatório incluir uma mensagem (-m) que descreva o que foi alterado.</li>
+            <li>Após o commit para finalizarmos o processo use o comando <strong>git Push</strong> Envia seus commits locais (que você acabou de criar) para o repositório remoto (o GitHub).</li>
+          </ol>
+          <p>Finalizado o processo de atualização do seu repositório pelo terminal Git</p>
+          <p>Sempre que for adicionar ou modificar arquivos e pastas no seu repositório siga esses passos para o commit ser executado corretamente</p>
+          <p>Siga a barra lateral para informações adicionais</p>
         </div>
         <div class="card" id="first">
             <h2>Primeiros passos do Git</h2>
@@ -46,11 +97,12 @@
                 <li>Instale o Git na sua Maquina pelo site oficial deles disponivel em 
                     <a href="https://git-scm.com/install/">Git install</a>
                 </li>
-                <li>Após o Git instalado Crie um Diretorio no seu computador que vai ser onde irá deixar todas as suas pastas de trabalho que você vai subir para o Git Hub.</li>
+                <li>Após o Git instalado va até seus Repositórios no Git Hub entre no repositório para usarmos o método de clonagem(Método que eu considero mais simples para os primeiros passos usando Git)</li>
                 <li>
-                    Nesse diretório voce poderá adicionar e excluir quantos arquivos vc quiser, coloque neles quantos trabalhos puder fazer(mas deixando claro uma coisa aqui, todos esses arquivos ficaram em apenas 1 Repositório.) para Criar Multiplos Repositórios vc deve Ter um Diretório Raiz para armazenar as pastas e arquivos.
+                    Nesse diretório voce poderá adicionar e excluir quantos arquivos vc quiser, coloque neles quantos trabalhos puder fazer(mas deixando claro uma coisa aqui, todos esses arquivos ficaram em apenas 1 Repositório.) Se quiser trabalhos em repositórios diferentes Crie eles no GitHub e use este método de clonagem.
                 </li>
-                
+                <li>Dentro do seu repositório no canto superior direito onde está listado as suas pastas de arquivos click no botão escrito <strong> <>CODE</strong> Nele você encontrará o link que pertence ao seu repositório, esse link vai usará para clonar</li>
+
             </ol>
             
         </div>
@@ -59,7 +111,7 @@
     </main>
     </div>
     <footer class="rodapé">
-
+        <p> &copy;Eng. Juan Lopes Ferreira - Todos os direitos reservados. </p>
     </footer>
 </body>
 </html>
