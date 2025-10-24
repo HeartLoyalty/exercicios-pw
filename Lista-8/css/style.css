@@ -2,80 +2,84 @@
 body{
     display: flex;
     flex-direction: column;
+    background-color: rgb(63, 60, 60);
 
     
 }
 header{
     flex: 0 100vh 0;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    align-self: center;
+    border: solid;
+    border-radius: 50px;
+    padding: 2%;
+    background-color: black;
+    color: white;
 }
 h2{
     font-size: 1rem;
     text-wrap: wrap;
-}
-img{
-    width: 150px;
-}
-#img1{
-    width: 400px;
-    height: 300px;
-}
-#img5{
-    width: 590px;
-    height: 350px;
-    
-}
-#img6{
-    width: 490px;
-    height: 290px;
-    order: 2;
-}
-#img2{
-    height: 290px;
-    width: 490px;
-}
-#img3{
-    width: 490px;
-    height: 290px;
-}
-#img4{
-    width: 900px;
-    height: 450px;
 }
 .container{
     display: flex;
     flex-direction: row;
     gap: 1rem;
     justify-content: center;
-    border: solid;
+    background-color: gray;
+    box-shadow: 0 0 10px 5px gray;
+}
+ul li{
+    margin-bottom:50px;
 }
 .sidebar{
 flex: 0 0 200px;
-border: 2px solid black;
+border-radius: 10px;
+padding: 18px;
+font-weight: bold;
+background-color: rgb(3, 3, 3);
+margin-top: 30px;
+color: white;
+box-shadow: 0 0 8px 0px black;
 
 }
 .principal-content{
     display: flex;
     flex-grow: 1;
     flex-direction: row;
-    gap: 1rem;
+    gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
     width: 900px;
-    padding: 20px;
+    padding: 30px;
 }
 .card{
-    border: 2px double blue;
     flex-basis: 200px;
     flex-grow: 1;
     flex-shrink: 1;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
-    align-self: center;
+    opacity: 1px;
+    border-radius: 10px;
+    padding:10px;
+    background-color: rgb(7, 7, 7);
+    color: aliceblue;
+    border: 2px double;
 
+}
+.card:hover{
+    box-shadow: 0 0 10px 4px rgb(172, 171, 171);
+    transition: 0.5s;
+    transform: translate(0, 2px) scale(1.05);
 }
 #first{
     flex-grow: 2;
-    flex-basis: 300px;
+    flex-basis: 500px;
     order: -1;
     
+}
+#litle{
+    flex-shrink: 0;
+    order: 2;
+
 }
