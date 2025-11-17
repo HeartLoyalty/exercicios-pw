@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    margin-bottom: 50px;
+    background-color: gray;
+    border: 10px solid black;
+    text-align: center;
+    padding: 10px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    margin-inline: 20px;
+    border: solid black 2px;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    padding: 10px;
+}
+.calculadora{
+    background-color: rgb(63, 63, 63);
+    border-radius: 7px;
+    padding: 20px;
+    border: solid black 2px;
+    width: 320px;
+    height: 420px;
+    display: grid;
+    grid-template-areas:
+    'visor visor visor visor'
+    'apagar apagar divisao multiplicaçao'
+    'sete oito nove subitraçao'
+    'quatro cinco seis adiçao'
+    'um dois tres igual'
+    'zero zero ponto igual';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+input{
+    border-radius: 7px;
+    text-align: end;
+    font-size: 2rem;
+    
+    
+}
+button{
+    border-radius: 7px;
+    background-color: rgb(64, 64, 85);
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+#visor{
+    grid-area: visor;
+    margin-bottom: 10px;
+
+}
+#um{
+grid-area:um;
+
+}
+#dois{
+grid-area:dois;
+
+}
+#tres{
+grid-area:tres;
+
+}
+#quatro{
+grid-area:quatro;
+
+}
+#cinco{
+grid-area:cinco;
+
+}
+#seis{
+grid-area:seis;
+
+}
+#sete{
+grid-area:sete;
+
+}
+#oito{
+grid-area:oito;
+
+}
+#nove{
+grid-area:nove;
+
+}
+#zero{
+grid-area:zero;
+
+}
+
+#adiçao{
+grid-area:adiçao;
+
+}
+#subitraçao{
+grid-area:subitraçao;
+
+}
+#divisao{
+grid-area:divisao;
+
+}
+#multiplicaçao{
+grid-area:multiplicaçao;
+
+}
+#apagar{
+grid-area:apagar;
+
+}
+#igual{
+grid-area:igual;
+
+}
+#ponto{
+    grid-area: ponto;
+}
